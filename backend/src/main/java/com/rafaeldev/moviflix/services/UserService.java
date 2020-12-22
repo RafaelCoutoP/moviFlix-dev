@@ -1,4 +1,4 @@
-package com.rafaeldev.moviflix.servicies;
+package com.rafaeldev.moviflix.services;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
