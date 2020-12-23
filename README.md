@@ -1,5 +1,5 @@
 # MovieFlix 
-[![NPM](https://img.shields.io/npm/l/react)]https://github.com/RafaelCoutoP/moviFlix-dev/blob/main/LICENSE
+![NPM](https://img.shields.io/npm/l/react)https://github.com/RafaelCoutoP/moviFlix-dev/blob/main/LICENSE
 
 # Sobre o projeto
 
@@ -13,6 +13,8 @@ Os filmes podem ser comentados porém, esses comentários só podem ser efetuado
 Aplicação tem um sistema de Login onde vai ser gerado o token para assim fazer a verificação se o usuário é VISITOR OU MEMBER.
 
 # Modelo conceitual
+
+![modelo movieflix](https://github.com/RafaelCoutoP/moviFlix-dev/blob/main/assets/Captura%20de%20Tela%20(54).png?raw=true)
 
 # Tecnologias utilizadas
 ## Back end
