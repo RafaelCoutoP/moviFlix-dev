@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.rafaeldev.moviflix.dto.InsertReviewDTO;
 import com.rafaeldev.moviflix.dto.ReviewDTO;
 import com.rafaeldev.moviflix.services.ReviewService;
 
@@ -25,9 +26,9 @@ public class ReviewResource {
 	
 	@PreAuthorize("hasAnyRole('MEMBER')")
 	@PostMapping
-	public ResponseEntity<ReviewDTO> insert(@Valid @RequestBody ReviewDTO dto){
-		dto = service.insert(dto);
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(dto.getId()).toUri();
-		return ResponseEntity.created(uri).body(dto);
+	public ResponseEntity<ReviewDTO> insert(@Valid @RequestBody InsertReviewDTO dto){
+		ReviewDTO reviewDTO = service.insert(dto);
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(reviewDTO.getId()).toUri();
+		return ResponseEntity.created(uri).body(reviewDTO);
 	}
 }
